@@ -6,3 +6,196 @@ Green: #00B172
 White: #FFF
 
 */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 830px;
+    margin: 0 auto;
+    /* This will center the container */
+    overflow: auto;
+    /* Allows for scrolling within the container */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; /* Ensure navbar sticks to the top */
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 10; /* Make sure navbar is above other content */
+    background-color: #FFF; /* Default to a black background */
+    color: #000; /* White text color for contrast */
+  }
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+    .navbar {
+      background-color: #000; /* Dark background for dark theme */
+      color: #fff; /* White text for dark theme */
+    }
+    /* Set the color for links in the navbar for dark theme */
+    .nav-links a {
+      color: #fff;
+    }
+  }
+
+/* Light theme */
+@media (prefers-color-scheme: light) {
+    .navbar {
+      background-color: #fff; /* Light background for light theme */
+      color: #000; /* Dark text for light theme */
+    }
+    /* Set the color for links in the navbar for light theme */
+    .nav-links a {
+      color: #000;
+    }
+  }
+
+  .logo img {
+    height: 50px; /* Or whatever size you prefer */
+    width: auto; /* This will maintain the aspect ratio of the image */
+  }
+  
+  .logo a {
+    display: inline-block; /* This can help with positioning and layout */
+    /* Additional styles if needed */
+  }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000; /* White text for links */
+    padding: 0 15px;
+  }
+
+header {
+    background-image: url('../images/landing.jpg');
+    /* Update with actual image path */
+    height: 480px;
+    /* Adjust the height as per your design needs */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    /* For white text */
+    padding-top: 60px;
+    /* Push content down by the height of the navbar */
+    width: 830px; /* Fixed width */
+    margin: 0 auto; /* Center the header */
+}
+
+header h1 {
+    font-size: 4em;
+    /* Might need to adjust */
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    /* Add some space between the h1 and paragraph */
+}
+
+
+.spotify-features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 5%;
+    /* Add some padding to the left and right */
+    text-align: center;
+}
+
+.spotify-features .feature img {
+    width: 50px; /* Set the width to the size you want the icons */
+    height: auto; /* Maintains the aspect ratio */
+    margin-bottom: 10px; /* Adds some space below the image */
+    display: block; /* Ensures the image is a block to center it */
+    margin-left: auto; /* These two margin settings will */
+    margin-right: auto; /* center the image horizontally */
+  }
+
+.spotify-features .feature {
+    width: 30%;
+    padding: 0 15px;
+    text-align: center;
+}
+/* Make the feature headings (h2) green */
+.spotify-features .feature h2 {
+    color: #00B172; /* Spotify green color */
+  }
+  
+
+
+@media (max-width: 768px) {
+    .spotify-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spotify-features .feature {
+        width: 80%;
+        /* Full width on smaller screens */
+        margin-bottom: 20px;
+        /* Add some space between features */
+    }
+}
+
+.spotify-green {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* This will vertically center the text and the image */
+  background-color: #1DB954; /* The green background */
+  padding: 20px; /* Adjust the padding as needed */
+  color: white;
+}
+
+
+.text-section {
+    flex: 1; /* Allows this section to grow and take up the remaining space */
+    padding-right: 20px; /* Adds some space between the text and the image */
+  }
+
+  .spotify-player {
+    flex: none; /* Ensures that the player section does not grow */
+    /* Set a maximum width for the Spotify player image if necessary */
+    max-width: 300px; /* Adjust this value as needed */
+  }
+  
+  .spotify-player img {
+    width: 100%; /* Makes the image responsive within the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .features-title {
+    text-align: center;
+    font-size: 2em; /* Adjust the font size as needed */
+    color: #1A1A1A; /* Adjust the color as needed */
+    margin-top: 20px; /* Spacing before the title */
+    margin-bottom: 20px; /* Spacing after the title */
+  }
+
+  .yezzy-title {
+    text-decoration: underline;
+    text-align: left;
+    font-size: 1.5em; /* Adjust the font size as needed */
+    color: #FFF; /* Assuming white text on green background */
+    /* Additional styling if needed */
+  }
