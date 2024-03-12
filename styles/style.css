@@ -65,7 +65,6 @@ html {
   
   .logo a {
     display: inline-block; /* This can help with positioning and layout */
-    /* Additional styles if needed */
   }
 
 .nav-links {
@@ -85,9 +84,7 @@ html {
 
 header {
     background-image: url('../images/landing.jpg');
-    /* Update with actual image path */
     height: 480px;
-    /* Adjust the height as per your design needs */
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -197,5 +194,4 @@ header p {
     text-align: left;
     font-size: 1.5em; /* Adjust the font size as needed */
     color: #FFF; /* Assuming white text on green background */
-    /* Additional styling if needed */
   }
